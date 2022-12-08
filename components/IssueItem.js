@@ -1,18 +1,6 @@
-import {useState, useEffect} from "react"
-import {Container, Box, TextField, Select, ButtonGroup, Button, Grid, Avatar, Chip, Tooltip} from "@mui/material"
-import { green } from "@mui/material/colors";
+import {Box, Chip, Tooltip} from "@mui/material"
 
 export default function IssueItem(props) {
-
-  const [loading, setLoading] = useState(false);
-  const [paginationURL, setPaginationURL] = useState({});
-  const [prevURL, setPrevURL] = useState("");
-  const [issues, setIssues] = useState([]);
-  const [filters, setFilters] = useState({})
-
-  useEffect(function(){
-    
-  }, [])
 
   function getTimeString(timeStr){
     let time, unit;

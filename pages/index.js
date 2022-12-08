@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import {useState, useEffect} from "react"
-import {Container, Box, TextField, Select, ButtonGroup, Button, Pagination, CircularProgress} from "@mui/material"
-import IssueItem from "./components/IssueItem"
+import {Container, Box, TextField, Button, Pagination, CircularProgress} from "@mui/material"
+import IssueItem from "../components/IssueItem"
 
 export default function Home() {
   
