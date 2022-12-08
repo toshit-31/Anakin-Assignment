@@ -46,7 +46,7 @@ export default function Home(props) {
                 <a href={props.data.url}>{props.data.title}</a>
                 <span sx={{mx: 3}}>
                 {props.data.labels.map( label => {
-                    return <Tooltip title={label.description}><Chip key={label.name} label={label.name} size="small" sx={{mx: 1, bgcolor: "#"+label.color+"33"}} variant="outlined"></Chip></Tooltip>
+                    return <Tooltip key={label.name} title={label.description}><Chip label={label.name} size="small" sx={{mx: 1, bgcolor: "#"+label.color+"33"}} variant="outlined"></Chip></Tooltip>
                 })}
                 </span>
             </span>
