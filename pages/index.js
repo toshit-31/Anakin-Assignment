@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import {useState, useEffect} from "react"
 import {Container, Box, TextField, Select, ButtonGroup, Button, Pagination, CircularProgress} from "@mui/material"
-import IssueItems from "./components/IssueItem"
+import IssueItem from "./components/IssueItem"
 
 export default function Home() {
   
@@ -202,7 +202,7 @@ export default function Home() {
             </Box>
           </Box>
           {loading ? <Box sx={{textAlign: "center", my: 5}}><CircularProgress size={40}/></Box> : (issues.length > 0 ? issues.map( (issue) => {
-              return <IssueItems key={issue.id} data={issue} />
+              return <IssueItem key={issue.id} data={issue} />
           }) : <Box sx={{textAlign: "center"}}><p>No Issues</p></Box>)}
         </Container>
         <Box sx={{width: "100%", display: "flex", justifyContent:"center"}}>

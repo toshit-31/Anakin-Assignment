@@ -2,7 +2,7 @@ import {useState, useEffect} from "react"
 import {Container, Box, TextField, Select, ButtonGroup, Button, Grid, Avatar, Chip, Tooltip} from "@mui/material"
 import { green } from "@mui/material/colors";
 
-export default function Home(props) {
+export default function IssueItem(props) {
 
   const [loading, setLoading] = useState(false);
   const [paginationURL, setPaginationURL] = useState({});
